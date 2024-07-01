@@ -18,5 +18,6 @@ return require('packer').startup(function()
   use 'lewis6991/gitsigns.nvim'
   use 'tpope/vim-fugitive'
 
+  use 'nvim-treesitter/nvim-treesitter'
 
 end)
