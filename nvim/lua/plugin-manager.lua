@@ -5,6 +5,8 @@ return require('packer').startup(function()
 
   use 'zbirenbaum/copilot.lua'
 
+  use 'nvim-tree/nvim-web-devicons'
+
   use {
     'nvim-lualine/lualine.nvim',
     requires = {
@@ -19,5 +21,11 @@ return require('packer').startup(function()
   use 'tpope/vim-fugitive'
 
   use 'nvim-treesitter/nvim-treesitter'
+
+  use {
+    'akinsho/bufferline.nvim',
+    tag = "*",
+    requires = 'nvim-tree/nvim-web-devicons'
+  }
 
 end)
