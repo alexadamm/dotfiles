@@ -4,4 +4,11 @@ return require('packer').startup(function()
   use 'nvim-tree/nvim-tree.lua'
 
   use 'zbirenbaum/copilot.lua'
+
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+  }
+
+  use 'norcalli/nvim-colorizer.lua'
 end)

@@ -1,4 +1,5 @@
 require('settings')
 require('keymappings')
+require('colorscheme.dracula')
 require('plugin-manager')
 require('plugin-configs')

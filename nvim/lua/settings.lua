@@ -13,3 +13,5 @@ vim.opt.smartindent = true
 
 -- leader key
 vim.g.mapleader = ' '
+
+vim.opt.termguicolors = true
