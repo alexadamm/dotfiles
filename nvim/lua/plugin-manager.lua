@@ -28,4 +28,12 @@ return require('packer').startup(function()
     requires = 'nvim-tree/nvim-web-devicons'
   }
 
+  use {
+    "windwp/nvim-autopairs",
+    event = "InsertEnter",
+    config = function()
+      require('plugin-configs.autopairs')
+    end
+  }
+
 end)

@@ -9,7 +9,10 @@ local function requireAll()
     if not file:match('init%.lua$') then
       -- convert file path to module path
       local module = file:sub(#config_dir + 2, -5)
-      require('plugin-configs.' .. module)
+      local status_ok, _ = pcall(require, 'plugin-configs.' .. module)
+      if not status_ok then
+        vim.api.nvim_echo({{"Failed to load: " .. 'plugin-configs.' .. module, "WarningMsg"}}, true, {})
+      end
     end
   end
 end
