@@ -7,8 +7,16 @@ return require('packer').startup(function()
 
   use {
     'nvim-lualine/lualine.nvim',
-    requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+    requires = {
+      'nvim-tree/nvim-web-devicons',
+      opt = true
+    }
   }
 
   use 'norcalli/nvim-colorizer.lua'
+
+  use 'lewis6991/gitsigns.nvim'
+  use 'tpope/vim-fugitive'
+
+
 end)
