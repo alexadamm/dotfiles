@@ -48,4 +48,11 @@ return require('packer').startup(function()
     requires = { "nvim-telescope/telescope.nvim" },
   })
 
+  use 'wakatime/vim-wakatime'
+
+  use 'tpope/vim-dadbod'
+  use 'kristijanhusak/vim-dadbod-completion'
+  use 'kristijanhusak/vim-dadbod-ui'
+
+
 end)
