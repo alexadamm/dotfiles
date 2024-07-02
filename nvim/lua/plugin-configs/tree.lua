@@ -11,7 +11,6 @@ local function my_on_attach(bufnr)
 
   api.config.mappings.default_on_attach(bufnr)
 
-  vim.keymap.set('n', 'H', api.tree.change_root_to_parent,        opts('Up'))
   vim.keymap.set('n', '?',     api.tree.toggle_help,                  opts('Help'))
 
   vim.api.nvim_buf_del_keymap(bufnr, 'n', '<C-e>')

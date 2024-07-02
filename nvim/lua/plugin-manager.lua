@@ -1,4 +1,4 @@
-return require('packer').startup(function()
+return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
 
   use 'nvim-tree/nvim-tree.lua'
@@ -37,12 +37,10 @@ return require('packer').startup(function()
   }
 
   use 'vijaymarupudi/nvim-fzf'
-
   use {
     'nvim-telescope/telescope.nvim',
     requires = { {'nvim-lua/plenary.nvim'} }
   }
-
   use({
     "kelly-lin/telescope-ag",
     requires = { "nvim-telescope/telescope.nvim" },
@@ -54,5 +52,7 @@ return require('packer').startup(function()
   use 'kristijanhusak/vim-dadbod-completion'
   use 'kristijanhusak/vim-dadbod-ui'
 
+  use "lukas-reineke/indent-blankline.nvim"
+  use "HiPhish/rainbow-delimiters.nvim"
 
 end)
