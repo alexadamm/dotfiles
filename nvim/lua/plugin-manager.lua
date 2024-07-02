@@ -36,4 +36,16 @@ return require('packer').startup(function()
     end
   }
 
+  use 'vijaymarupudi/nvim-fzf'
+
+  use {
+    'nvim-telescope/telescope.nvim',
+    requires = { {'nvim-lua/plenary.nvim'} }
+  }
+
+  use({
+    "kelly-lin/telescope-ag",
+    requires = { "nvim-telescope/telescope.nvim" },
+  })
+
 end)
